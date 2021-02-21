@@ -50,10 +50,10 @@ class ScannerState extends State<Scanner> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        
+
         backgroundColor: Colors.blueGrey[800],
         appBar: AppBar(
-          
+
           backgroundColor: Colors.blueGrey[400],
           title: Text('QR Scanner'),
 
@@ -77,7 +77,7 @@ class ScannerState extends State<Scanner> {
               Navigator.pushNamed(context, '/data');
             },
             icon: Icon(Icons.camera_alt),
-            label: Text('Scan')),
+            label: Text('Scan', style: TextStyle(color: Colors.white),)),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
     );
